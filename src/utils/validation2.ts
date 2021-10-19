@@ -28,6 +28,8 @@ export function validatePersonalIdLevel2(id: string, type: 'R' | 'I'): boolean {
   return true
 }
 
+// validatePersonalIdLevel2('A1234456', 'I')
+
 export function validateResidencePermitLevel2(id: string): boolean {
   if (id.length !== 10) return false
   // 比對前二個字母是否為英文字母, 後8個是數字

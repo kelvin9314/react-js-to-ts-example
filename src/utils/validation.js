@@ -21,6 +21,7 @@ export function validatePersonalIdLevel0(id, type) {
   if (sum % 10 !== 0) return false
   return true
 }
+
 function validateResidencePermitLevel0(id) {
   if (id.length !== 10) return false
   if (isNaN(id.substr(2, 8)) || !/^[A-Z]$/.test(id.substr(0, 1)) || !/^[A-Z]$/.test(id.substr(1, 1))) return false
@@ -73,6 +74,9 @@ export function validatePersonalIdLevel1(id, type) {
   if (sum % 10 !== 0) return false
   return true
 }
+
+// validatePersonalIdLevel1('A12345678', '')
+
 /**
  * 檢驗 - (舊式)居留證證號
  *
